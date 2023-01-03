@@ -97,23 +97,57 @@ console.log("------------------");
 console.log("Total Months: " + finances.length);
 
 // Calculate The net total amount of Profit/Losses over the entire period. and print to console.
+//The net total amount of profit / losses over entire period.
+    //Addd up the money
+    //Keep a rolling total
+    // Need a variable to store the rolling total
+    // For loop to iterate over the array.
+        // Inside the loop access position 1 of each elerment to get the numbers.
+
+
+
 console.log("Total: ");
 
+for (let i = finances.length - 1; i < 0; i--) {
+  console.log(i);
+}
+
+
+//______________________________
 //The average of the **changes** in Profit/Losses over the entire period.
+// Find the total changes in profit from month to month and find the average. total / array.length
+
+// for loop starting at i - 1
+    //Each itteration subtracts the data at position [1] of thee previous element from the data at position [1] of the current data
+    // Put data in a new variable type array.
+    // Push arr.push() each new 'change ' value to new array
+// Add up total of new 'changes' array
+    // Need a variable to store the rolling total for this array that is different from the rolling total of profits.
+    // For loop to itterate over 'changes' array.
+    // Add each element in turn to the rolling total.
+// Take the 'Total changes ammount' and divide by array.length. Round up to 2 decimal places.
+
+
 console.log("Average Change:  ");
 
+
+//_____________________________
+
 //The greatest increase in profits (date and amount) over the entire period.
+    // For loop
+    // If new variable > than store then new variable replaces store.
+// 
+
+
+
+
+
 console.log("Greatest Increase in Profits: ");
 
-
+//________________________________________________________
 //  The greatest decrease in losses (date and amount) over the entire period.
+
+ // If new variable < than store then new variable replaces store.
+
+
 console.log("Greatest Decrease in Profits: ");
-
-
-
-
-for (let i = finances.length -1; i < 0; i--) {
-
-    console.log(i);
-
-}
